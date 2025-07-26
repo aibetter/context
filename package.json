@@ -1,8 +1,9 @@
 {
-  "name": "context",
-  "description": "Contextual knowledge base for various fields of AI.",
+  "name": "ai-context",
+  "description": "Build the AI that understands you best",
   "license": "CCO-1.0",
   "packageManager": "pnpm@10.13.1",
+  "type": "module",
   "devDependencies": {
     "vitepress": "^1.6.3"
   },
