@@ -1,0 +1,14 @@
+{
+  "name": "context",
+  "description": "Contextual knowledge base for various fields of AI.",
+  "license": "CCO-1.0",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
