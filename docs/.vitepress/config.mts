@@ -4,6 +4,13 @@ export default defineConfig({
   title: "AI Context",
   description: "Contextual knowledge base for various fields of AI",
   head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        href: '/favicon.ico'
+      }
+    ],
    [
     'script',
     {
