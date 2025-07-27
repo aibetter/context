@@ -18,4 +18,4 @@ Currently, from which perspectives can we approach building an **AI Context**? T
 
 ## Summary
 
-LLM large model training is a game for world-class consortiums, while **AI Context** construction is an individual's ode to AI. 
+LLM large model training is a game for world-class consortiums, while **AI Context** construction is an individual's ode to AI.

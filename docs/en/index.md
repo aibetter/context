@@ -7,4 +7,3 @@ hero:
   tagline: "AI is the second brain of human beings"
   image: "/logo-256.png"
 ---
-
