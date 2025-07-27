@@ -1,0 +1,10 @@
+---
+alwaysApply: false
+---
+
+This rule provides the workflow to translate ZH docs to EN docs
+
+## Workflow
+
+- scan the git staging area to see which documents in the **/docs/zh** folder have been modified
+- translate the modified documents according to **@translationExpert.mdc** and save the translation content in the corresponding path **/docs/en** (if the target file already exists, overwrite the content, otherwise create a new file)
