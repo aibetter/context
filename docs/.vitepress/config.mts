@@ -63,9 +63,25 @@ export default defineConfig({
   locales: {
     root: {
       label: 'English',
+      themeConfig: {
+        nav: [
+          {
+            text: 'Guide',
+            link:'/guide/what'
+          }
+        ]
+      }
     },
     zh: {
-      label: '简体中文'
+      label: '简体中文',
+      themeConfig: {
+        nav: [
+          {
+            text: '指南',
+            link: '/zh/guide/what'
+          }
+        ]
+      }
     }
   }
 })
