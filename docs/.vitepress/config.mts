@@ -1,12 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { monitorScripts } from './config/head'
+import llmstxt from 'vitepress-plugin-llms'
 
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
   title: "AI Context",
   description: "Contextual knowledge base for various fields of AI",
-
 
   rewrites: {
     'en/:rest*': ':rest*'
@@ -61,5 +61,9 @@ export default defineConfig({
         ]
       }
     }
+  },
+
+  vite: {
+    plugins: [llmstxt()]
   }
 })
