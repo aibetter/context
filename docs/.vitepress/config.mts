@@ -3,6 +3,20 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "AI Context",
   description: "Contextual knowledge base for various fields of AI",
+
+
+  rewrites: {
+    'en/:rest*': ':rest*'
+  },
+
+  lastUpdated: true,
+  cleanUrls: true,
+  metaChunk: true,
+
+  sitemap: {
+    hostname: 'https://context.aibetter.run'
+  },
+
   head: [
     [
       'link',
@@ -38,10 +52,20 @@ export default defineConfig({
     gtag('config', 'G-JX60ZNCJEB');`
    ]
   ],
+
   themeConfig: {
     logo: '/logo-256.png',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aibetter/context.git' }
-    ]
+    ],
+  },
+
+  locales: {
+    root: {
+      label: 'English',
+    },
+    zh: {
+      label: '简体中文'
+    }
   }
 })
