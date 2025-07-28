@@ -1,0 +1,33 @@
+{
+  "$schema": "./schema.json",
+  "servers": [
+    {
+      "name": "sequential-thinking",
+      "description": "An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.",
+      "command": "npx",
+      "args": ["run", "--rm", "-i", "mcp/sequentialthinking"],
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking"
+    },
+    {
+      "name": "time",
+      "description": "A Model Context Protocol server that provides time and timezone conversion capabilities. This server enables LLMs to get current time information and perform timezone conversions using IANA timezone names, with automatic system timezone detection.",
+      "command": "npx",
+      "args": ["mcp-server-time"],
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/time"
+    },
+    {
+      "name": "playwright",
+      "description": "A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "repository": "https://github.com/microsoft/playwright-mcp"
+    },
+    {
+      "name": "browsermcp",
+      "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser.",
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"],
+      "repository": "https://github.com/browsermcp/mcp"
+    }
+  ]
+}

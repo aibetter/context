@@ -3,6 +3,10 @@
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  */
 
+@import 'tailwindcss' important;
+@custom-variant dark (&:where(.dark, .dark *));
+@plugin "@iconify/tailwind4";
+
 /**
  * Colors
  *

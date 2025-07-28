@@ -1,15 +1,17 @@
+import { env } from 'node:process'
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
-import { monitorScripts } from './config/head'
 import llmstxt from 'vitepress-plugin-llms'
+import { monitorScripts } from './config/head'
 
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = env.NODE_ENV === 'production'
 
 export default defineConfig({
-  title: "AI Context",
-  description: "Contextual knowledge base for various fields of AI",
+  title: 'AI Context',
+  description: 'Contextual knowledge base for various fields of AI',
 
   rewrites: {
-    'en/:rest*': ':rest*'
+    'en/:rest*': ':rest*',
   },
 
   lastUpdated: true,
@@ -17,7 +19,7 @@ export default defineConfig({
   metaChunk: true,
 
   sitemap: {
-    hostname: 'https://context.aibetter.run'
+    hostname: 'https://context.aibetter.run',
   },
 
   head: [
@@ -25,45 +27,56 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: '/favicon.ico'
-      }
+        href: '/favicon.ico',
+      },
     ],
-    ...(isProd ? monitorScripts : [])
+    ...(isProd ? monitorScripts : []),
   ],
 
   themeConfig: {
     logo: '/logo-256.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/aibetter/context.git' }
+      { icon: 'github', link: 'https://github.com/aibetter/context.git' },
     ],
   },
 
   locales: {
     root: {
       label: 'English',
+      lang: 'en-US',
       themeConfig: {
         nav: [
           {
             text: 'Guide',
-            link:'/guide/what'
-          }
-        ]
-      }
+            link: '/guide/what',
+          },
+          {
+            text: 'Resources',
+            items: [
+              {
+                text: 'MCP Servers',
+                link: '/resources/mcp-servers',
+              },
+            ],
+          },
+        ],
+      },
     },
     zh: {
       label: '简体中文',
+      lang: 'zh-CN',
       themeConfig: {
         nav: [
           {
             text: '指南',
-            link: '/zh/guide/what'
-          }
-        ]
-      }
-    }
+            link: '/zh/guide/what',
+          },
+        ],
+      },
+    },
   },
 
   vite: {
-    plugins: [llmstxt()]
-  }
+    plugins: [llmstxt(), tailwindcss()],
+  },
 })

@@ -1,4 +1,7 @@
 onlyBuiltDependencies:
+  - '@tailwindcss/oxide'
   - esbuild
+
 publicHoistPattern:
+  - typescript
   - vue
