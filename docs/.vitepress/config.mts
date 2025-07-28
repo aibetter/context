@@ -1,7 +1,7 @@
 import { env } from 'node:process'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
-import llmstxt from 'vitepress-plugin-llms'
+// import llmstxt from 'vitepress-plugin-llms'
 import { monitorScripts } from './config/head'
 
 const isProd = env.NODE_ENV === 'production'
@@ -11,7 +11,7 @@ export default defineConfig({
   description: 'Contextual knowledge base for various fields of AI',
 
   rewrites: {
-    'en/:rest': ':rest',
+    'en/:rest*': ':rest*',
   },
 
   lastUpdated: true,
@@ -78,10 +78,10 @@ export default defineConfig({
 
   vite: {
     plugins: [
-      llmstxt({
-        domain: 'https://context.aibetter.run',
-        ignoreFiles: ['**/index.md', 'zh/**/*.md'],
-      }),
+      // llmstxt({
+      //   domain: 'https://context.aibetter.run',
+      //   ignoreFiles: ['**/index.md', 'zh/**/*.md'],
+      // }),
       tailwindcss(),
     ],
   },
