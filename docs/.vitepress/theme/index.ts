@@ -1,6 +1,6 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import McpServers from './views/mcpServers.vue'
+import McpServers from './views/McpServers.vue'
 import './style.css'
 
 export default {
