@@ -11,7 +11,7 @@ export default defineConfig({
   description: 'Contextual knowledge base for various fields of AI',
 
   rewrites: {
-    'en/:rest*': ':rest*',
+    'en/:rest': ':rest',
   },
 
   lastUpdated: true,
@@ -77,6 +77,12 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [llmstxt(), tailwindcss()],
+    plugins: [
+      llmstxt({
+        domain: 'https://context.aibetter.run',
+        ignoreFiles: ['**/index.md', 'zh/**/*.md'],
+      }),
+      tailwindcss(),
+    ],
   },
 })
