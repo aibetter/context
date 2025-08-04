@@ -71,6 +71,15 @@ export default defineConfig({
             text: '指南',
             link: '/zh/guide/what',
           },
+          {
+            text: '资源',
+            items: [
+              {
+                text: 'MCP 服务器',
+                link: '/zh/resources/mcp-servers',
+              },
+            ],
+          },
         ],
       },
     },
