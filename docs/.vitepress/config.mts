@@ -60,6 +60,26 @@ export default defineConfig({
             ],
           },
         ],
+        sidebar: [
+          {
+            text: 'Guide',
+            items: [
+              {
+                text: 'What is AI Context?',
+                link: '/guide/what',
+              },
+            ],
+          },
+          {
+            text: 'Resources',
+            items: [
+              {
+                text: 'MCP Servers',
+                link: '/resources/mcp-servers',
+              },
+            ],
+          },
+        ],
       },
     },
     zh: {
@@ -70,6 +90,26 @@ export default defineConfig({
           {
             text: '指南',
             link: '/zh/guide/what',
+          },
+          {
+            text: '资源',
+            items: [
+              {
+                text: 'MCP Servers',
+                link: '/zh/resources/mcp-servers',
+              },
+            ],
+          },
+        ],
+        sidebar: [
+          {
+            text: '指南',
+            items: [
+              {
+                text: '什么是 AI Context？',
+                link: '/zh/guide/what',
+              },
+            ],
           },
           {
             text: '资源',
