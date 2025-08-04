@@ -75,7 +75,7 @@ export default defineConfig({
             text: '资源',
             items: [
               {
-                text: 'MCP 服务器',
+                text: 'MCP Servers',
                 link: '/zh/resources/mcp-servers',
               },
             ],
