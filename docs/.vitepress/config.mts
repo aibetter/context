@@ -59,6 +59,15 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: 'Cursor Rules',
+            items: [
+              {
+                text: 'Languages',
+                link: '/cursor-rules/languages/vue',
+              },
+            ],
+          },
         ],
         sidebar: [
           {
@@ -76,6 +85,20 @@ export default defineConfig({
               {
                 text: 'MCP Servers',
                 link: '/resources/mcp-servers',
+              },
+            ],
+          },
+          {
+            text: 'Cursor Rules',
+            items: [
+              {
+                text: 'Languages',
+                items: [
+                  {
+                    text: 'Vue',
+                    link: '/cursor-rules/languages/vue',
+                  },
+                ],
               },
             ],
           },
@@ -100,6 +123,15 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: 'Cursor 规则',
+            items: [
+              {
+                text: 'Languages',
+                link: '/zh/cursor-rules/languages/vue',
+              },
+            ],
+          },
         ],
         sidebar: [
           {
@@ -117,6 +149,20 @@ export default defineConfig({
               {
                 text: 'MCP Servers',
                 link: '/zh/resources/mcp-servers',
+              },
+            ],
+          },
+          {
+            text: 'Cursor 规则',
+            items: [
+              {
+                text: '编程语言',
+                items: [
+                  {
+                    text: 'Vue',
+                    link: '/zh/cursor-rules/languages/vue',
+                  },
+                ],
               },
             ],
           },
