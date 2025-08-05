@@ -180,4 +180,11 @@ export default defineConfig({
       tailwindcss(),
     ],
   },
+
+  markdown: {
+    theme: {
+      light: 'rose-pine-dawn',
+      dark: 'rose-pine-moon',
+    },
+  },
 })
