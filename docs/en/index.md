@@ -15,5 +15,5 @@ features:
   - icon: 📜
     title: Cursor Rules
     details: Comprehensive and professional Cursor rules library
-    link: /en/cursor-rules/language/vue
+    link: /en/cursor-rules/languages/vue
 ---

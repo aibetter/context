@@ -15,5 +15,5 @@ features:
   - icon: 📜
     title: Cursor 规则
     details: 全面且专业的 Cursor 规则库
-    link: /zh/cursor-rules/language/vue
+    link: /zh/cursor-rules/languages/vue
 ---
