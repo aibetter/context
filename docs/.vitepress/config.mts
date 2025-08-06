@@ -3,6 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 // import llmstxt from 'vitepress-plugin-llms'
 import { monitorScripts } from './config/head'
+import { cursorRulesLanguages } from './config/sidebar'
 
 const isProd = env.NODE_ENV === 'production'
 
@@ -93,12 +94,7 @@ export default defineConfig({
             items: [
               {
                 text: 'Languages',
-                items: [
-                  {
-                    text: 'Vue',
-                    link: '/cursor-rules/languages/vue',
-                  },
-                ],
+                items: cursorRulesLanguages('en'),
               },
             ],
           },
@@ -157,12 +153,7 @@ export default defineConfig({
             items: [
               {
                 text: '编程语言',
-                items: [
-                  {
-                    text: 'Vue',
-                    link: '/zh/cursor-rules/languages/vue',
-                  },
-                ],
+                items: cursorRulesLanguages('zh'),
               },
             ],
           },
