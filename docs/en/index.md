@@ -11,9 +11,9 @@ features:
   - icon: 🤖
     title: Mcp Servers
     details: Curated and practical Mcp Servers
-    link: /en/resources/mcp-servers
+    link: /resources/mcp-servers
   - icon: 📜
     title: Cursor Rules
     details: Comprehensive and professional Cursor rules library
-    link: /en/cursor-rules/languages/vue
+    link: /cursor-rules/languages/vue
 ---
