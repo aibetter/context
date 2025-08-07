@@ -64,6 +64,10 @@ export default defineConfig({
             text: 'Cursor Rules',
             items: [
               {
+                text: 'Constitution',
+                link: '/cursor-rules/constitution',
+              },
+              {
                 text: 'Languages',
                 link: '/cursor-rules/languages/vue',
               },
@@ -92,6 +96,10 @@ export default defineConfig({
           {
             text: 'Cursor Rules',
             items: [
+              {
+                text: 'Constitution',
+                link: '/cursor-rules/constitution',
+              },
               {
                 text: 'Languages',
                 items: cursorRulesLanguages('en'),
@@ -123,7 +131,11 @@ export default defineConfig({
             text: 'Cursor 规则',
             items: [
               {
-                text: 'Languages',
+                text: '宪法',
+                link: '/zh/cursor-rules/constitution',
+              },
+              {
+                text: '编程语言',
                 link: '/zh/cursor-rules/languages/vue',
               },
             ],
@@ -151,6 +163,10 @@ export default defineConfig({
           {
             text: 'Cursor 规则',
             items: [
+              {
+                text: '宪法',
+                link: '/zh/cursor-rules/constitution',
+              },
               {
                 text: '编程语言',
                 items: cursorRulesLanguages('zh'),
