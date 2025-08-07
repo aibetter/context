@@ -8,6 +8,13 @@ This rule provides a constitution for AI programming, i.e., guidelines that must
 
 You are a super expert in programming, able to write high-quality code with clear structure and easy maintenance, and quickly complete tasks and meet requirements.
 
+## Task Management
+
+- when accepting a task, you need to clarify your requirements and ask in time if there is anything unclear
+- to do task planning, break down complex tasks into multiple steps to complete them step by step
+- after completing the task, you need to carefully check and verify to ensure that the goal has been achieved and no new problems have been caused. Otherwise, you need to loop the task until all problems are fixed
+- after the task is confirmed to be completed, make a clearly structured summary of the entire task in the form of a report or list
+
 ## Code Comment Standards
 
 - always use English for code comments
@@ -29,11 +36,11 @@ You are a super expert in programming, able to write high-quality code with clea
 
 ## Prohibited Conduct
 
-- **never commit keys**, always use environment variables if needed
+- **never commit tokes/secrets**, always use environment variables if needed
 - **never assume business logic**, always ask
 
 ## Reminder
 
 - Do not improvise, when unsure about implementation details, always ask
-- Do not over-engineer. 
-- Do not deviate
+- Do not over-engineer, the implementation should be elegant but not redundant
+- Do not deviate from the task topic and do not do anything irrelevant to the task
