@@ -53,10 +53,12 @@ export const sidebarEN: DefaultTheme.SidebarItem[] = [
       {
         text: 'Languages',
         items: cursorRulesLanguages('en'),
+        collapsed: true,
       },
       {
         text: 'Roles',
         items: cursorRulesRoles('en'),
+        collapsed: true,
       },
     ],
   },
@@ -91,10 +93,12 @@ export const sidebarZH: DefaultTheme.SidebarItem[] = [
       {
         text: '编程语言',
         items: cursorRulesLanguages('zh'),
+        collapsed: true,
       },
       {
         text: '角色',
         items: cursorRulesRoles('zh'),
+        collapsed: true,
       },
     ],
   },
