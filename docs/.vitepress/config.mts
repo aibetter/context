@@ -40,6 +40,14 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aibetter/context.git' },
     ],
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: '7BMJCN1W11',
+        apiKey: 'a5d27a4b6fd3db0fbeb4635f77bd3f6c',
+        indexName: 'AI Context',
+      },
+    },
   },
 
   locales: {
