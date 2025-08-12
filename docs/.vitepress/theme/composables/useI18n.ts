@@ -1,4 +1,4 @@
-import { get } from 'lodash-es'
+import { get } from 'es-toolkit/compat'
 import { useData } from 'vitepress'
 import en from '../langs/en.json'
 import zh from '../langs/zh.json'
