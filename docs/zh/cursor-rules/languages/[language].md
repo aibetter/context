@@ -1,4 +1,4 @@
-# Cursor Rule for {{ $params.languageRaw }} Language
+# Cursor Rule for {{ $params.roleRaw }} Language
 
 ```mdc
 <!-- @content -->

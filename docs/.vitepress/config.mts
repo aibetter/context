@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 // import llmstxt from 'vitepress-plugin-llms'
 import { monitorScripts } from './config/head'
-import { cursorRulesLanguages } from './config/sidebar'
+import { cursorRulesLanguages, cursorRulesRoles } from './config/sidebar'
 
 const isProd = env.NODE_ENV === 'production'
 
@@ -71,6 +71,10 @@ export default defineConfig({
                 text: 'Languages',
                 link: '/cursor-rules/languages/vue',
               },
+              {
+                text: 'Roles',
+                link: '/cursor-rules/roles/translator',
+              },
             ],
           },
         ],
@@ -103,6 +107,10 @@ export default defineConfig({
               {
                 text: 'Languages',
                 items: cursorRulesLanguages('en'),
+              },
+              {
+                text: 'Roles',
+                items: cursorRulesRoles('en'),
               },
             ],
           },
@@ -138,6 +146,10 @@ export default defineConfig({
                 text: '编程语言',
                 link: '/zh/cursor-rules/languages/vue',
               },
+              {
+                text: '角色',
+                link: '/zh/cursor-rules/roles/translator',
+              },
             ],
           },
         ],
@@ -170,6 +182,10 @@ export default defineConfig({
               {
                 text: '编程语言',
                 items: cursorRulesLanguages('zh'),
+              },
+              {
+                text: '角色',
+                items: cursorRulesRoles('zh'),
               },
             ],
           },
