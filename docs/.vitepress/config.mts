@@ -3,7 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vitepress'
 // import llmstxt from 'vitepress-plugin-llms'
 import { monitorScripts } from './config/head'
-import { cursorRulesLanguages, cursorRulesRoles } from './config/sidebar'
+import { navEN, navZH } from './config/nav'
+import { sidebarEN, sidebarZH } from './config/sidebar'
 
 const isProd = env.NODE_ENV === 'production'
 
@@ -46,150 +47,16 @@ export default defineConfig({
       label: 'English',
       lang: 'en-US',
       themeConfig: {
-        nav: [
-          {
-            text: 'Guide',
-            link: '/guide/what',
-          },
-          {
-            text: 'Resources',
-            items: [
-              {
-                text: 'MCP Servers',
-                link: '/resources/mcp-servers',
-              },
-            ],
-          },
-          {
-            text: 'Cursor Rules',
-            items: [
-              {
-                text: 'Constitution',
-                link: '/cursor-rules/constitution',
-              },
-              {
-                text: 'Languages',
-                link: '/cursor-rules/languages/vue',
-              },
-              {
-                text: 'Roles',
-                link: '/cursor-rules/roles/translator',
-              },
-            ],
-          },
-        ],
-        sidebar: [
-          {
-            text: 'Guide',
-            items: [
-              {
-                text: 'What is AI Context?',
-                link: '/guide/what',
-              },
-            ],
-          },
-          {
-            text: 'Resources',
-            items: [
-              {
-                text: 'MCP Servers',
-                link: '/resources/mcp-servers',
-              },
-            ],
-          },
-          {
-            text: 'Cursor Rules',
-            items: [
-              {
-                text: 'Constitution',
-                link: '/cursor-rules/constitution',
-              },
-              {
-                text: 'Languages',
-                items: cursorRulesLanguages('en'),
-              },
-              {
-                text: 'Roles',
-                items: cursorRulesRoles('en'),
-              },
-            ],
-          },
-        ],
+        nav: navEN,
+        sidebar: sidebarEN,
       },
     },
     zh: {
       label: '简体中文',
       lang: 'zh-CN',
       themeConfig: {
-        nav: [
-          {
-            text: '指南',
-            link: '/zh/guide/what',
-          },
-          {
-            text: '资源',
-            items: [
-              {
-                text: 'MCP Servers',
-                link: '/zh/resources/mcp-servers',
-              },
-            ],
-          },
-          {
-            text: 'Cursor 规则',
-            items: [
-              {
-                text: '宪法',
-                link: '/zh/cursor-rules/constitution',
-              },
-              {
-                text: '编程语言',
-                link: '/zh/cursor-rules/languages/vue',
-              },
-              {
-                text: '角色',
-                link: '/zh/cursor-rules/roles/translator',
-              },
-            ],
-          },
-        ],
-        sidebar: [
-          {
-            text: '指南',
-            items: [
-              {
-                text: '什么是 AI Context？',
-                link: '/zh/guide/what',
-              },
-            ],
-          },
-          {
-            text: '资源',
-            items: [
-              {
-                text: 'MCP Servers',
-                link: '/zh/resources/mcp-servers',
-              },
-            ],
-          },
-          {
-            text: 'Cursor 规则',
-            items: [
-              {
-                text: '宪法',
-                link: '/zh/cursor-rules/constitution',
-              },
-              {
-                text: '编程语言',
-                items: cursorRulesLanguages('zh'),
-              },
-              {
-                text: '角色',
-                items: cursorRulesRoles('zh'),
-              },
-            ],
-          },
-        ],
+        nav: navZH,
+        sidebar: sidebarZH,
       },
     },
   },
