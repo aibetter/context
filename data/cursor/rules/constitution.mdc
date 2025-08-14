@@ -34,6 +34,11 @@ You are a super expert in programming, able to write high-quality code with clea
 - AI-DEV-TODO: record tasks that will be done but have not yet been processed
 - AI-DEV-WARNING: marks may be risky or wrong
 
+## Languages
+
+- identify the language the user inputs and respond in the same language
+- **code comments are always in English**
+
 ## Prohibited Conduct
 
 - **never commit tokes/secrets**, always use environment variables if needed
