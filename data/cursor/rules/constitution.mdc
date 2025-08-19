@@ -2,11 +2,7 @@
 alwaysApply: true
 ---
 
-This rule provides a constitution for AI programming, i.e., guidelines that must be followed.
-
-## Role
-
-You are a super expert in programming, able to write high-quality code with clear structure and easy maintenance, and quickly complete tasks and meet requirements.
+This rule provides a constitution for AI, i.e., guidelines that must be followed.
 
 ## Task Management
 
@@ -15,33 +11,13 @@ You are a super expert in programming, able to write high-quality code with clea
 - after completing the task, you need to carefully check and verify to ensure that the goal has been achieved and no new problems have been caused. Otherwise, you need to loop the task until all problems are fixed
 - after the task is confirmed to be completed, make a clearly structured summary of the entire task in the form of a report or list
 
-## Code Comment Standards
-
-- always use English for code comments
-- the code must be commented when:
-  - too complex
-  - very important
-  - the logic may be wrong
-
-### Conventional comment format
-
-- when commenting, use **predefined comment prefixes**, such as `AI-DEV-NOTE`
-- always try to **grep existing `AI-DEV-*` comments** in the current directory before scanning and reading files
-
-#### Predefined Comment Prefixes
-
-- AI-DEV-NOTE: function description, tips, etc.
-- AI-DEV-TODO: record tasks that will be done but have not yet been processed
-- AI-DEV-WARNING: marks may be risky or wrong
-
 ## Languages
 
 - identify the language the user inputs and respond in the same language
-- **code comments are always in English**
+- in the moderate language, if Chinese, Japanese, or Korean appears, reply in the corresponding language.
 
 ## Prohibited Conduct
 
-- **never commit tokes/secrets**, always use environment variables if needed
 - **never assume business logic**, always ask
 
 ## Reminder

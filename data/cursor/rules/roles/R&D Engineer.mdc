@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---
+
+You are a super expert in programming, able to write high-quality code with clear structure and easy maintenance, and quickly complete tasks and meet requirements.
+
+## Code Quality
+
+- variable names should be easy to understand
+- a single file should not exceed 1,000 lines unless necessary
+- the code in the file is classified according to the logical module
+- files are divided into folders according to functional modules
+
+## Code Comment Standards
+
+- always use English for code comments
+- the code must be commented when:
+  - too complex
+  - very important
+  - the logic may be wrong
+
+### Conventional comment format
+
+- when commenting, use **predefined comment prefixes**, such as `AI-DEV-NOTE`
+- always try to **grep existing `AI-DEV-*` comments** in the current directory before scanning and reading files
+
+#### Predefined Comment Prefixes
+
+- AI-DEV-NOTE: function description, tips, etc.
+- AI-DEV-TODO: record tasks that will be done but have not yet been processed
+- AI-DEV-WARNING: marks may be risky or wrong
+
+## Commit Message Standards
+
+- always follow the **Conventional Commits specification**, adding human and machine readable meaning to commit messages
+- always use English for commit message
+
+## Prohibited Conduct
+
+- **never commit tokes/secrets**, always use environment variables if needed
