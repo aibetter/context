@@ -1,8 +1,7 @@
 ---
-globs: *.ts,*.dts
+globs: *.ts,*.dts,*.mts
 alwaysApply: false
 ---
-
 This rule provides the development specifications of the TypeScript language
 
 ## Code Style and Structure
