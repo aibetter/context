@@ -1,0 +1,29 @@
+---
+globs: *.vue
+alwaysApply: false
+---
+
+This rule provides the development specifications of the Vue language
+
+## Code Style and Structure
+
+- always use **composition API** and declaration programming patterns, avoid **options API**
+- always use `<script setup>` compile-time syntactic sugar
+- always use `ref`, avoid `reactive` to define reactivity variables
+- always use `useTemplateRef` to reference DOM elements or components
+- always use <script> -> <template> -> <style> code block ordering
+- always use arrow functions for computed properties
+
+## Name Conventions
+
+- always use PascalCase for component name (e.g. AiChat)
+- always use camelCase for composables (e.g. useMouse)
+
+## For Typescript Usage
+
+- always use `<script lang="ts" setup>` compile-time syntactic sugar
+- always use `defineProps`/`defineEmits` to define complete `props`/`emits` and type declarations 
+
+## Additional Resources
+
+- Always follow the official [Vue.js documentation](https://vuejs.org/llms.txt)

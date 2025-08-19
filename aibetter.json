@@ -1,0 +1,11 @@
+{
+  "cursor": {
+    "rules": {
+      "constitution": true,
+      "languages": {
+        "TypeScript": true,
+        "vue": true
+      }
+    }
+  }
+}
